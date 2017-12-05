@@ -10,13 +10,6 @@ const sortOptions = [
     {name: "size", value: "Name Length"}
 ];
 
-const buildingOptions = [
-    {name: "all", value: "All", active: true},
-    {name: "Academic", value: "Academic"},
-    {name: "Library", value: "Library"},
-    {name: "Residential", value: "Residential"}
-];
-
 const locationOptions = [
     {name: "all", value: "All", active: true},
     {name: "Main Green", value: "Main Green"},
@@ -38,7 +31,6 @@ class FilteredList extends Component {
         super(props);
         this.state = {
             search: "",
-            buildingType: "all",
             location: "all",
             sorting: "name",
             accessible: "all"
@@ -53,7 +45,6 @@ class FilteredList extends Component {
     // Returns the item if it is included in the selected filters.
     filterItem = (item) => {
         return item.name.toLowerCase().search(this.state.search) !== -1 
-            && (item.buildingType === this.state.buildingType || this.state.buildingType === "all")
             && (item.location === this.state.location || this.state.location === "all")
             && (item.accessible === this.state.accessible || this.state.accessible === "all");
     }
@@ -88,11 +79,11 @@ class FilteredList extends Component {
         return (
             <div className="filter-list">
                 <div id="header">
-                    <div id="title"><img alt="Brown University Seal" src="brown-logo.png" id="logo" /><h1>Search Buildings at Brown</h1></div>
+                    <div id="title"><img alt="Brown University Seal" src="brown-logo.png" id="logo" /><h1>Dorm Directory</h1></div>
                     <Picker pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
                     <Picker pickFunction={this.setSetting} selection="location" items={locationOptions} title="Location"  id="locationPicker"/>
                     <Picker pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
-                    <ProximitySearch />
+                    <ProximitySearch items={this.props.items} />
                     <input type="text" placeholder="Search" onChange={this.onSearch} className="field"/>
                 </div>
                 <List items={this.props.items.filter(this.filterItem).sort(this.sortItems)} />
