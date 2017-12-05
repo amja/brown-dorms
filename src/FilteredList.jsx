@@ -90,7 +90,6 @@ class FilteredList extends Component {
                 <div id="header">
                     <div id="title"><img alt="Brown University Seal" src="brown-logo.png" id="logo" /><h1>Search Buildings at Brown</h1></div>
                     <Picker pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
-                    <Picker pickFunction={this.setSetting} selection="buildingType" items={buildingOptions} title="Building Type" id="buildingPicker" />
                     <Picker pickFunction={this.setSetting} selection="location" items={locationOptions} title="Location"  id="locationPicker"/>
                     <Picker pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
                     <ProximitySearch />
