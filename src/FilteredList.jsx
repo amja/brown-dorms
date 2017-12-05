@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import List from './List';
 import Picker from './Picker';
+import ProximitySearch from './ProximitySearch';
 
 // These three arrays are to define the DropdownMenus used for sorting/filtering.
 const sortOptions = [
@@ -92,6 +93,7 @@ class FilteredList extends Component {
                     <Picker pickFunction={this.setSetting} selection="buildingType" items={buildingOptions} title="Building Type" id="buildingPicker" />
                     <Picker pickFunction={this.setSetting} selection="location" items={locationOptions} title="Location"  id="locationPicker"/>
                     <Picker pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
+                    <ProximitySearch />
                     <input type="text" placeholder="Search" onChange={this.onSearch} className="field"/>
                 </div>
                 <List items={this.props.items.filter(this.filterItem).sort(this.sortItems)} />
