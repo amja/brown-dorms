@@ -33,7 +33,8 @@ class FilteredList extends Component {
             search: "",
             location: "all",
             sorting: "name",
-            accessible: "all"
+            accessible: "all",
+            distance: 0
         };
     }
 
@@ -75,6 +76,17 @@ class FilteredList extends Component {
         item.classList.add("active");
     }
 
+    // This method populates the distance field of the locations and then sorts them by that.
+    updateDistances = (elements, names) =>{
+        for(var i = 0; i < elements.length; i++) {
+            this.props.items[i].distance = elements[i].elements[0].duration.value;
+        }
+        this.setState({
+            sorting: "distance",
+            distance: this.state.distance + 1
+        });
+    }
+
     render() {
         return (
             <div className="filter-list">
@@ -83,10 +95,10 @@ class FilteredList extends Component {
                     <Picker pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
                     <Picker pickFunction={this.setSetting} selection="location" items={locationOptions} title="Location"  id="locationPicker"/>
                     <Picker pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
-                    <ProximitySearch items={this.props.items} />
+                    <ProximitySearch items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>
                     <input type="text" placeholder="Search" onChange={this.onSearch} className="field"/>
                 </div>
-                <List items={this.props.items.filter(this.filterItem).sort(this.sortItems)} />
+                <List items={this.props.items.filter(this.filterItem).sort(this.sortItems)}/>
             </div>
         );
     }

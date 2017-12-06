@@ -7,7 +7,7 @@ const buildings = [
 		"img":"BrownUniversity-CaswellHall.jpg",
 		"description":"The wooden floors and fireplaces help you to forget that your roommate uses your toothbrush to clean his white sneakers.",
 		"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
-		"latLong": "41.830443, -71.402504"
+		"latLong": "41.826134, -71.400644"
 	},
 	{
 		"name":"Andrews Hall",
@@ -17,7 +17,7 @@ const buildings = [
 		"img":"BrownUniversity-AndrewsHall.jpg",
 		"description":"Residents feel on top of the world (if the world were a dining hall). This year, the Harvest Fest in the basement didn't have chicken pot pie.",
 		"navLink":"https://goo.gl/maps/M4zpGo4Cwp82",
-		"latLong": "41.826134, -71.400644"
+		"latLong": "41.830443, -71.402504"
 	},
 	{
 		"name":"Marcy House",
