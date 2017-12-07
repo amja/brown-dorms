@@ -128,7 +128,7 @@ const buildings = [
 		"kitchens": "General (2)",
 		"bathrooms": "1 per 5 singles",
 		"program": "No",
-		"img":"gradcenterd.jpg",
+		"img":"gradcenter.jpg",
 		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 		"navLink":"https://goo.gl/maps/CKczionqspj",
 		"location":"41.824878, -71.401378"
@@ -138,17 +138,33 @@ const buildings = [
 	{
 		"name":"Gregorian Quad A",
 		"built":1991,
-		"roomType":[1],
-		"accessible":false,
-		"numRooms": 102,
-		"kitchens": "General (2)",
-		"bathrooms": "1 per 5 singles",
+		"roomType":[1,2],
+		"accessible":true,
+		"numRooms": 44,
+		"kitchens": "General (3)",
+		"bathrooms": "1 per double",
 		"program": "No",
-		"img":"gradcenterd.jpg",
+		"img":"newdorm.jpg",
 		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 		"navLink":"https://goo.gl/maps/CKczionqspj",
-		"latLong":"41.824878, -71.401378"
+		"location":"41.824878, -71.401378"
 
+	}
+
+	,
+
+	{
+		"name":"Harkness House",
+		"built":1951,
+		"roomType":[1,2],
+		"accessible":true,
+		"numRooms": 44,
+		"kitchens": "General (3)",
+		"bathrooms": "1 per double",
+		"program": "No",
+		"img":"newdorm.jpg",
+		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
+		"navLink":"https://goo.gl/maps/CKczionqspj",
 		"location":"41.824878, -71.401378"
 
 	}
