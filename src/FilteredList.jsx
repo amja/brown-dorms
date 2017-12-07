@@ -119,12 +119,12 @@ class FilteredList extends Component {
                     <div id="logo"><img alt="Brown University Seal" src="brown-logo.png" id="logo"/></div>
                     <h1>Sophomore Dorm Guide</h1>
                     <div id="navbar">
-                    <Picker ref="sortPicker" pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
-                    <Picker ref="roomTypePicker" pickFunction={this.setSetting} selection="roomType" items={roomTypeOptions} title="Room Type"  id="roomTypePicker"/>
-                    <Picker ref="accessibilityPicker" pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
-                    <Button onClick={this.clearPrefs}>Clear preferences</Button>
-                    <ProximitySearch ref="map" items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>
-                    <input ref="search" type="text" placeholder="Search" onChange={this.onSearch} className="field"/>
+                        <Picker ref="sortPicker" pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
+                        <Picker ref="roomTypePicker" pickFunction={this.setSetting} selection="roomType" items={roomTypeOptions} title="Room Type"  id="roomTypePicker"/>
+                        <Picker ref="accessibilityPicker" pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
+                        <Button onClick={this.clearPrefs}>Clear preferences</Button>
+                        <ProximitySearch ref="map" items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>
+                        <input ref="search" type="text" placeholder="Search" onChange={this.onSearch} className="field"/>
                     </div>
                 </div>
                 <List items={this.props.items.filter(this.filterItem).sort(this.sortItems)}/>
