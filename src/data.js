@@ -100,13 +100,44 @@ const buildings = [
 		"img":"goddard.jpg",
 		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 		"navLink":"https://goo.gl/maps/CKczionqspj",
-
-		"latLong":"41.824878, -71.401378"
+		"location":"41.824878, -71.401378"
 	},
 
 	{
 		"name":"Graduate Center D",
 		"built":1968,
+		"roomType":[1],
+		"accessible":false,
+		"numRooms": 102,
+		"kitchens": "General (2)",
+		"bathrooms": "1 per 5 singles",
+		"program": "No",
+		"img":"gradcenterd.jpg",
+		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
+		"navLink":"https://goo.gl/maps/CKczionqspj",
+		"location":"41.824878, -71.401378"
+
+	},
+
+	{
+		"name":"Graduate Center D",
+		"built":1968,
+		"roomType":[1],
+		"accessible":false,
+		"numRooms": 102,
+		"kitchens": "General (2)",
+		"bathrooms": "1 per 5 singles",
+		"program": "No",
+		"img":"gradcenterd.jpg",
+		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
+		"navLink":"https://goo.gl/maps/CKczionqspj",
+		"location":"41.824878, -71.401378"
+
+	},
+
+	{
+		"name":"Gregorian Quad A",
+		"built":1991,
 		"roomType":[1],
 		"accessible":false,
 		"numRooms": 102,
