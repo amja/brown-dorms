@@ -166,6 +166,8 @@ h3 {
 input[type=text] {
   height: 25px;
   width:180px;
+  border: 1px solid #8c1212;
+  padding: 4px;
 }
 
 icon {
