@@ -101,6 +101,14 @@ Picker, .btn, .btn-sm, .btn-default, .dropdown-toggle {
 
 }
 
+.btn-group label.active {
+  background:blue;
+}
+
+.btn-group label.active:hover {
+  background:green;
+}
+
 ul {
   display: grid;
   grid-gap: 20px;
