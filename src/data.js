@@ -26,7 +26,7 @@ const buildings = [
 	"program": "No",
 	"img":"barbour.jpg",
 	"description":"The wooden floors and fireplaces help you to forget that your roommate uses your toothbrush to clean his white sneakers.",
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 },
 {
@@ -40,7 +40,7 @@ const buildings = [
 	"program": "International House",
 	"img":"buxton.jpg",
 	"description":"Residents feel on top of the world (if the world were a dining hall). This year, the Harvest Fest in the basement didn't have chicken pot pie.",
-	"navLink":"https://goo.gl/maps/M4zpGo4Cwp82",
+	"brownMap":"https://goo.gl/maps/M4zpGo4Cwp82",
 	"location": "41.830443, -71.402504"
 },
 {
@@ -54,7 +54,7 @@ const buildings = [
 	"program": "No",
 	"img":"caswell.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 },
 
@@ -69,7 +69,7 @@ const buildings = [
 	"program": "Theta Delta Chi Fraternity & Haram	bee House",
 	"img":"chapin.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 },
 
@@ -84,7 +84,7 @@ const buildings = [
 	"program": "Kappa Alpha Theta Sorority & Social Action House",
 	"img":"diman.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 },
 
@@ -99,7 +99,7 @@ const buildings = [
 	"program": "Alpha Delta Phi Fraternity",
 	"img":"goddard.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 },
 
@@ -114,7 +114,7 @@ const buildings = [
 	"program": "No",
 	"img":"gradcenter.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 
 },
@@ -130,7 +130,7 @@ const buildings = [
 	"program": "No",
 	"img":"newdorm.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 
 },
@@ -146,7 +146,7 @@ const buildings = [
 	"program": "Kappa Delta Sorority & Technology House",
 	"img":"harkness.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 
 },
@@ -162,7 +162,7 @@ const buildings = [
 	"program": "No",
 	"img":"hopecollege.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 
 },
@@ -178,7 +178,7 @@ const buildings = [
 	"program": "St. Anthony Hall",
 	"img":"kings.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 
 },
@@ -194,7 +194,7 @@ const buildings = [
 	"program": "No",
 	"img":"littlefield.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-	"navLink":"https://goo.gl/maps/CKczionqspj",
+	"brownMap":"https://goo.gl/maps/CKczionqspj",
 	"location":"41.824878, -71.401378"
 
 },
@@ -208,7 +208,7 @@ const buildings = [
 	"kitchens": "General (3)",
 	"program": "Spanish/French House & Latinx House",
 	"img": "machado.jpg",
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 },
 
@@ -222,7 +222,7 @@ const buildings = [
 	"program": "Beta Rho Pi Fraternity & Zeta Delta Xi Fraternity",
 	"img": "marcy.jpg",
 	"description":TODO,
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 },
 
@@ -236,7 +236,7 @@ const buildings = [
 	"program": "None",
 	"img": "minden.jpg",
 	"description":TODO,
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 },
 
@@ -252,7 +252,7 @@ const buildings = [
 	"program": "None",
 	"img": "newpembroke3.jpg",
 	"description":TODO,
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 },
 
@@ -267,7 +267,7 @@ const buildings = [
 	"program": "None",
 	"img": "perkins.jpg",
 	"description":TODO,
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 },
 
@@ -281,7 +281,7 @@ const buildings = [
 	"program": "None",
 	"img": "plantation.jpg",
 	"description":TODO,
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 },
 
@@ -295,7 +295,7 @@ const buildings = [
 	"program": "Alpha Chi Omega sorority, Delta Tau fraternity",
 	"img": "sears.jpg",
 	"description":TODO,
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 },
 
@@ -310,7 +310,7 @@ const buildings = [
 	"program": "Environmental Program House",
 	"img": "west.jpg",
 	"description":TODO,
-	"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+	"brownMap":"https://goo.gl/maps/d1feMnFYU4U2",
 	"location": "41.826134, -71.400644"
 }
 
