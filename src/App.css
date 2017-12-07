@@ -77,14 +77,14 @@ Picker, .btn, .btn-sm, .btn-default, .dropdown-toggle {
 }
 
 #navbar {
+  box-sizing: content-box;
+  padding:5px 0 5px 0;
   width: 100%;
-  height: 60px;
   background-color: white;
   margin-bottom: 30px;
   margin-top: 30px;
   position: center;
   align-items: center;
-  padding-top: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
