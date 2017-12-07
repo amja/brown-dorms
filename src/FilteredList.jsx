@@ -22,8 +22,8 @@ const roomTypeOptions = [
 
 const accessibilityOptions = [
     {name: "all", value: "All", active: true},
-    {name: "Accessible", value: "Accessible"},
-    {name: "Non-accessible", value: "Non-accessible"}
+    {name: true, value: "Accessible"},
+    {name: false, value: "Non-accessible"}
 ];
 
 class FilteredList extends Component {
