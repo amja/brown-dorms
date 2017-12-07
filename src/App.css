@@ -1,8 +1,9 @@
 #header {
   text-align: center;
   margin-bottom: 50px;
-  border-bottom: 1.2px dashed #bc1414;
+  /*border-bottom: 1.2px dashed #bc1414;*/
   padding: 15px;
+  background-color: #bc1414;
 }
 
 #title {
@@ -16,7 +17,7 @@
 
 h1 {
   display: inline;
-  color: #bc1414;
+  color: white;
   font-weight: bold;
   font-style: italic;
   font-family: Raleway;
