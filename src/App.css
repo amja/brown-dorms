@@ -102,11 +102,13 @@ Picker, .btn, .btn-sm, .btn-default, .dropdown-toggle {
 }
 
 .btn-group label.active {
-  background:blue;
+  background-image: linear-gradient(to bottom, #d9534f 0, #c12e2a 100%);
+  color:white!important;
+  text-shadow:none;
 }
 
 .btn-group label.active:hover {
-  background:green;
+  background: linear-gradient(to bottom, #B84643 0, #A62824 100%);
 }
 
 ul {
