@@ -13,11 +13,12 @@ class Picker extends Component {
             style: "default"
         };
     }
+
     renderMenuItems() {
     	return this.props.items.map(item => {
     		return <MenuItem key={item.name} eventKey={item.name} onSelect={this.props.pickFunction} selection={this.props.selection} active={item.active}>{item.value}</MenuItem>
     	});
-    }  
+    }
 
     // Changes the title of the DropdownButton based on the option clicked.
     changeTitle = (eventKey, event) => {

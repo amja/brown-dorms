@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import List from './List';
 import Picker from './Picker';
+import {Button} from 'react-bootstrap';
 import ProximitySearch from './ProximitySearch';
 
 // These three arrays are to define the DropdownMenus used for sorting/filtering.
@@ -56,6 +57,11 @@ class FilteredList extends Component {
         this.setState({
             [event.currentTarget.getAttribute("selection")]: eventKey
         });
+        this.refs.map.refs.mapSearch.value = "";
+        this.props.items.forEach(function(element) {
+            element.distance = null;
+            element.time_text = null;
+        });
     }
 
     // One method for sorting name length, date built or alphabetical.
@@ -80,6 +86,7 @@ class FilteredList extends Component {
     updateDistances = (elements, names) =>{
         for(var i = 0; i < elements.length; i++) {
             this.props.items[i].distance = elements[i].elements[0].duration.value;
+            this.props.items[i].time_text = elements[i].elements[0].duration.text;
         }
         this.setState({
             sorting: "distance",
@@ -87,16 +94,34 @@ class FilteredList extends Component {
         });
     }
 
+    clearPrefs = () => {
+        this.setState({
+            search: "",
+            location: "all",
+            sorting: "name",
+            accessible: "all",
+            distance: 0
+        });
+        this.refs.search.value = "";
+        this.refs.map.refs.mapSearch.value = "";
+        // I hate this
+        var val = {currentTarget: {textContent: "All"}};
+        this.refs.sortPicker.changeTitle(null,val);
+        this.refs.locationPicker.changeTitle(null,val);
+        this.refs.accessibilityPicker.changeTitle(null,val);
+    }   
+
     render() {
         return (
             <div className="filter-list">
                 <div id="header">
                     <div id="title"><img alt="Brown University Seal" src="brown-logo.png" id="logo" /><h1>Dorm Directory</h1></div>
-                    <Picker pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
-                    <Picker pickFunction={this.setSetting} selection="location" items={locationOptions} title="Location"  id="locationPicker"/>
-                    <Picker pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
-                    <ProximitySearch items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>
-                    <input type="text" placeholder="Search" onChange={this.onSearch} className="field"/>
+                    <Picker ref="sortPicker" pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
+                    <Picker ref="locationPicker" pickFunction={this.setSetting} selection="location" items={locationOptions} title="Location"  id="locationPicker"/>
+                    <Picker ref="accessibilityPicker" pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
+                    <Button onClick={this.clearPrefs}>Clear preferences</Button>
+                    <ProximitySearch ref="map" items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>
+                    <input ref="search" type="text" placeholder="Search" onChange={this.onSearch} className="field"/>
                 </div>
                 <List items={this.props.items.filter(this.filterItem).sort(this.sortItems)}/>
             </div>

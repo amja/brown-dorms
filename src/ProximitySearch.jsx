@@ -36,7 +36,7 @@ class ProximitySearch extends Component {
 
     render() {
         return (
-            <input ref="mapSearch" type="text" placeholder="map" className="field"/>
+            <input ref="mapSearch" type="text" placeholder="Sort by entered location" className="field"/>
         );
     }
 }
