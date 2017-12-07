@@ -149,6 +149,18 @@ h3 {
   font-size: 20pt;
   margin: 20px 0 20px 0;
   font-family: Raleway;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+h3:hover {
+  letter-spacing: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .field {
@@ -171,6 +183,33 @@ input[type=text]:hover {
 icon {
   font-size:60px;
   color:red;
+}
+
+littlebox {
+  width: 80px;
+  height: 40px;
+  border: 2px solid #bc1414;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+littlebox:hover {
+  color: white;
+  background-color: #bc1414;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  /*border-color: #bc1414;
+  border-width: 4px;
+  border-style: outset;*/
 }
 
 @media screen and (max-width: 1090px) {
