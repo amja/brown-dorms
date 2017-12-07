@@ -11,7 +11,7 @@ const buildings = [
 		"program": "No",
 		"img":"111.jpg",
 		"description":"The wooden floors and fireplaces help you to forget that your roommate uses your toothbrush to clean his white sneakers.",
-		"navLink":"https://goo.gl/maps/d1feMnFYU4U2",
+		"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/BROWN111/PICTURES",
 		"latLong": "41.826134, -71.400644"
 	},
 
@@ -66,7 +66,7 @@ const buildings = [
 		"numRooms": 58,
 		"kitchens": "General (3)",
 		"bathrooms": "2 per floor",
-		"program": "Theta Delta Chi Fraternity & Harambee House",
+		"program": "Theta Delta Chi Fraternity & Haram	bee House",
 		"img":"chapin.jpg",
 		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 		"navLink":"https://goo.gl/maps/CKczionqspj",

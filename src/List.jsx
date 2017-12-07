@@ -11,7 +11,7 @@ class List extends Component {
                     <img alt={"photo of " + item.name} src={item.img}/>
                     <h3>{item.name}</h3>
                     <h4>Built: {item.built}</h4>{distance}
-                    <p>{item.description} (map: <a href={item.googleMap} target="_blank">Google</a> / <a href={item.brownMap} target="_blank">Brown</a>)</p>
+                    <p>{item.description} (map: <a href={item.brownMap} target="_blank">Brown</a>)</p>
                     <p>Number of Rooms: {item.numRooms}</p>
                     <p>Accessibility: {item.accessible ? "Accessible" : "Non-Accessible"}</p>
                     <p>Kitchens: {item.kitchens}</p>
