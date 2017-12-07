@@ -12,7 +12,7 @@ class List extends Component {
                     <h3>{item.name}</h3>
                     <h4>Built: {item.built}</h4>{distance}
                     <p>{item.description} (map: <a href={item.brownMap} target="_blank">Brown</a>)</p>
-                    <p>Number of Rooms: {item.numRooms == -1 ? : "Rooms not granted through Housing Lottery" : item.numRooms}</p>
+                    <p>Number of Rooms: {item.numRooms == -1 ? "Rooms not granted through Housing Lottery" : item.numRooms}</p>
                     <p>Accessibility: {item.accessible ? "Accessible" : "Non-Accessible"}</p>
                     <p>Kitchens: {item.kitchens}</p>
                     <p>Bathroom Type: {item.bathrooms}</p>
