@@ -46,8 +46,7 @@ h1:hover {
 
 Picker, .btn, .btn-sm, .btn-default, .dropdown-toggle {
   color: #3a3434 !important;
-  border-radius: 25px !important;
-  box-shadow: 3px 0px 0px #ffffff !important;
+  border-radius: 25px;
   border-color: #8c1212 !important;
   font-family: 'Raleway' !important;
   font-weight: bold;
@@ -57,7 +56,6 @@ Picker, .btn, .btn-sm, .btn-default, .dropdown-toggle {
 
 .btn-primary, .btn-select, .btn-success, .select{
   color: #3a3434 !important;
-  border-color: white !important;
   font-family: 'Raleway' !important;
   letter-spacing: 1px !important;
   font-size: 12px !important;
@@ -185,6 +183,7 @@ icon {
   color:red;
 }
 
+
 littlebox {
   width: 80px;
   height: 40px;
@@ -210,6 +209,20 @@ littlebox:hover {
   /*border-color: #bc1414;
   border-width: 4px;
   border-style: outset;*/
+
+.btn-group:not(.dropdown) .btn {
+  border-radius: 0;
+}
+
+.edge:nth-of-type(1) {
+  margin-left:10px;
+  border-radius: 25px 0 0 25px!important;
+}
+
+.edge:nth-of-type(5) {
+  border-radius: 0 25px 25px 0!important;
+  margin-right: 10px;
+
 }
 
 @media screen and (max-width: 1090px) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import List from './List';
 import Picker from './Picker';
-import {Button} from 'react-bootstrap';
+import {Button, ToggleButton, ToggleButtonGroup} from 'react-bootstrap';
 import ProximitySearch from './ProximitySearch';
 
 // These three arrays are to define the DropdownMenus used for sorting/filtering.
@@ -112,6 +112,7 @@ class FilteredList extends Component {
         this.refs.accessibilityPicker.changeTitle(null,val);
     }   
 
+    // <Picker ref="roomTypePicker" pickFunction={this.setSetting} selection="roomType" items={roomTypeOptions} title="Room Type"  id="roomTypePicker"/>
     render() {
         return (
             <div className="filter-list">
@@ -120,7 +121,13 @@ class FilteredList extends Component {
                     <h1>Sophomore Dorm Guide</h1>
                     <div id="navbar">
                         <Picker ref="sortPicker" pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
-                        <Picker ref="roomTypePicker" pickFunction={this.setSetting} selection="roomType" items={roomTypeOptions} title="Room Type"  id="roomTypePicker"/>
+                        <ToggleButtonGroup type="checkbox">
+                            <ToggleButton value="1" className="edge">Single</ToggleButton>
+                            <ToggleButton value="2">Double</ToggleButton>
+                            <ToggleButton value="3">Triple</ToggleButton>
+                            <ToggleButton value="4">Quad</ToggleButton>
+                            <ToggleButton value="5" className="edge">Suite</ToggleButton>
+                        </ToggleButtonGroup>
                         <Picker ref="accessibilityPicker" pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
                         <Button onClick={this.clearPrefs}>Clear preferences</Button>
                         <ProximitySearch ref="map" items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>
