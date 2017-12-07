@@ -66,6 +66,9 @@ Picker, .btn, .btn-sm, .btn-default, .dropdown-toggle {
 
 }
 
+.btn-danger {
+  color: white!important;
+}
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover {
   background-color: #bc1414!important;
@@ -156,6 +159,7 @@ h3 {
 }
 
 .field {
+  font-family: Raleway;
   margin: 10px;
 }
 
@@ -167,4 +171,16 @@ input[type=text] {
 icon {
   font-size:60px;
   color:red;
+}
+
+@media screen and (max-width: 1090px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
 }
