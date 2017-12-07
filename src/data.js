@@ -12,7 +12,7 @@ const buildings = [
 		"img":"111.jpg",
 		"description":"The wooden floors and fireplaces help you to forget that your roommate uses your toothbrush to clean his white sneakers.",
 		"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/BROWN111/PICTURES",
-		"location": "41.826134, -71.400644"
+		"location": "111 Brown St,Providence, RI 02906"
 	},
 
 	{

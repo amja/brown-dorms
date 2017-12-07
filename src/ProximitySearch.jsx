@@ -29,7 +29,6 @@ class ProximitySearch extends Component {
 		}
 
 	callback = (response, status) => {
-		console.log(response);
 		this.props.updateFunction(response.rows, names);
 		names = [];
 	}
