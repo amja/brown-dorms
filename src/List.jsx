@@ -14,7 +14,7 @@ class List extends Component {
                     <p>{item.description} (map: <a href={item.brownMap} target="_blank">Brown</a>)</p>
                     <p><span><i className="fa fa-users"></i>    Number of Rooms:</span> {item.numRooms === -1 ? "Rooms not granted through Housing Lottery" : item.numRooms}</p>
                     <p><span><i className="fa fa-wheelchair"></i>    Accessibility:</span> {item.accessible ? "Accessible" : "Non-Accessible"}</p>
-                    <p><span><i className="fa fa-cutlery"></i>    Kitchens:</span> {item.kitchens}</p>
+                    <p><span><i className="fa fa-cutlery"></i> Kitchens:</span> {item.kitchens}</p>
                     <p><span><i className="fa fa-bath"></i>    Bathroom Type:</span> {item.bathrooms}</p>
                     <p><span><i className="fa fa-institution"></i>    Program Housing?</span> {item.program}</p>
                 </li>)

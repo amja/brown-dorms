@@ -307,7 +307,7 @@ const buildings = [
 	"accessible":"Accessible",
 	"numRooms": 79,
 	"kitchens": 3,
-	"program": "Alpha Chi Omega sorority, Delta Tau fraternity",
+	"program": "Alpha Chi Omega Sorority & Delta Tau Fraternity",
 	"img": "sears.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/SEARS/PICTURES",
