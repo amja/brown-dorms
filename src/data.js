@@ -221,7 +221,7 @@ const buildings = [
 	"kitchens": "General (3)",
 	"program": "Beta Rho Pi Fraternity & Zeta Delta Xi Fraternity",
 	"img": "marcy.jpg",
-	"description":"fuck",
+	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/MARCYHSE/PICTURES",
 	"location": "41.826134, -71.400644"
 },
@@ -235,7 +235,7 @@ const buildings = [
 	"kitchens": "General (1)",
 	"program": "None",
 	"img": "minden.jpg",
-	"description":"fuck",
+	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/MINDEN/PICTURES",
 	"location": "41.826134, -71.400644"
 },
@@ -251,7 +251,7 @@ const buildings = [
 	"kitchens": "General (2)",
 	"program": "None",
 	"img": "newpembroke3.jpg",
-	"description":"fuck",
+	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/NEWPEM4/PICTURES",
 	"location": "41.826134, -71.400644"
 },
@@ -265,7 +265,7 @@ const buildings = [
 	"kitchens": "General (3)",
 	"program": "Sigma Chi Fraternity & Beta Omega Chi Fraternity",
 	"img": "olney.jpg",
-	"description":"fuck",
+	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/OLNEY/PICTURES",
 	"location": "41.826134, -71.400644"
 },
@@ -280,7 +280,7 @@ const buildings = [
 	"kitchens": "General (4)",
 	"program": "None",
 	"img": "perkins.jpg",
-	"description":"fuck",
+	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/PERKINS/PICTURES",
 	"location": "41.826134, -71.400644"
 },
@@ -294,7 +294,7 @@ const buildings = [
 	"kitchens": 1,
 	"program": "None",
 	"img": "plantation.jpg",
-	"description":"fuck",
+	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/WESTHSE/PICTURES",
 	"location": "41.826134, -71.400644"
 },
@@ -308,7 +308,7 @@ const buildings = [
 	"kitchens": 3,
 	"program": "Alpha Chi Omega sorority, Delta Tau fraternity",
 	"img": "sears.jpg",
-	"description":"fuck",
+	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/SEARS/PICTURES",
 	"location": "41.826134, -71.400644"
 },
@@ -323,7 +323,7 @@ const buildings = [
 	"kitchens": 1,
 	"program": "Environmental Program House",
 	"img": "west.jpg",
-	"description":"fuck",
+	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/WESTHSE/PICTURES",
 	"location": "41.826134, -71.400644"
 }
