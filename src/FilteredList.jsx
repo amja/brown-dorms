@@ -7,8 +7,8 @@ import ProximitySearch from './ProximitySearch';
 // These three arrays are to define the DropdownMenus used for sorting/filtering.
 const sortOptions = [
     {name: "name", value: "Alphabetical", active: true},
+    {name: "numRooms", value: "Number of Rooms"},
     {name: "built", value: "Age"},
-    {name: "numRooms", value: "Number of Rooms"}
 ];
 
 const roomTypeOptions = [
