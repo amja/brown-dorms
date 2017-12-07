@@ -8,12 +8,10 @@ class List extends Component {
             }
             return (
                 <li key={item.name}>
-                    <a href={item.navLink} target="_blank">
-                        <img alt={"photo of " + item.name} src={item.img}/>
-                    </a>
+                    <img alt={"photo of " + item.name} src={item.img}/>
                     <h3>{item.name}</h3>
                     <h4>Built: {item.built}</h4>{distance}
-                    <p>{item.description}</p>
+                    <p>{item.description} (map: <a href={item.googleMap} target="_blank">Google</a> / <a href={item.brownMap} target="_blank">Brown</a>)</p>
                 </li>)
         });
 

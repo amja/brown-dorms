@@ -58,7 +58,7 @@ li img:hover {
   box-shadow: none;
 }
 
-li a:hover + h3 {
+li img:hover + h3 {
   margin-top: 11px;
 }
 
