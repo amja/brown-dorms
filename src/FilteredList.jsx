@@ -11,15 +11,6 @@ const sortOptions = [
     {name: "built", value: "Age"},
 ];
 
-const roomTypeOptions = [
-    {name: "all", value: "All", active: true},
-    {name: 1, value: "Singles"},
-    {name: 2, value: "Doubles"},
-    {name: 3, value: "Triples"},
-    {name: 4, value: "Quads"},
-    {name: 5, value: "Suites"}
-];
-
 const accessibilityOptions = [
     {name: "all", value: "All", active: true},
     {name: true, value: "Accessible"},
@@ -31,7 +22,7 @@ class FilteredList extends Component {
         super(props);
         this.state = {
             search: "",
-            roomType: "all",
+            roomType: [],
             sorting: "name",
             accessible: "all",
             distance: 0
@@ -45,8 +36,14 @@ class FilteredList extends Component {
 
     // Returns the item if it is included in the selected filters.
     filterItem = (item) => {
+        var roomAppropriate = true;
+        this.state.roomType.forEach(function(val) {
+            if(item.roomType.indexOf(val) === -1) {
+                roomAppropriate = false;
+            }
+        });
         return item.name.toLowerCase().search(this.state.search) !== -1 
-            && (item.roomType.indexOf(this.state.roomType) !== -1  || this.state.roomType === "all")
+            && (roomAppropriate)
             && (item.accessible === this.state.accessible || this.state.accessible === "all");
     }
 
@@ -93,7 +90,7 @@ class FilteredList extends Component {
     clearPrefs = () => {
         this.setState({
             search: "",
-            roomType: "all",
+            roomType: [],
             sorting: "name",
             accessible: "all",
             distance: 0
@@ -108,11 +105,18 @@ class FilteredList extends Component {
         // I hate this
         var val = {currentTarget: {textContent: "All"}};
         this.refs.sortPicker.changeTitle(null,val);
-        this.refs.roomTypePicker.changeTitle(null,val);
+        this.setState({
+            roomType: []
+        });
         this.refs.accessibilityPicker.changeTitle(null,val);
     }   
 
-    // <Picker ref="roomTypePicker" pickFunction={this.setSetting} selection="roomType" items={roomTypeOptions} title="Room Type"  id="roomTypePicker"/>
+    addRoomSize = (eventKey) => {
+        this.setState({
+            roomType: eventKey
+        });
+    }
+
     render() {
         return (
             <div className="filter-list">
@@ -121,15 +125,15 @@ class FilteredList extends Component {
                     <h1>Sophomore Dorm Guide</h1>
                     <div id="navbar">
                         <Picker ref="sortPicker" pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
-                        <ToggleButtonGroup type="checkbox">
-                            <ToggleButton value="1" className="edge">Single</ToggleButton>
-                            <ToggleButton value="2">Double</ToggleButton>
-                            <ToggleButton value="3">Triple</ToggleButton>
-                            <ToggleButton value="4">Quad</ToggleButton>
-                            <ToggleButton value="5" className="edge">Suite</ToggleButton>
+                        <ToggleButtonGroup type="checkbox" onChange={this.addRoomSize} value={this.state.roomType}>
+                            <ToggleButton value={1} className="edge" checked={true}>Single</ToggleButton>
+                            <ToggleButton value={2}>Double</ToggleButton>
+                            <ToggleButton value={3}>Triple</ToggleButton>
+                            <ToggleButton value={4}>Quad</ToggleButton>
+                            <ToggleButton value={5} className="edge">Suite</ToggleButton>
                         </ToggleButtonGroup>
                         <Picker ref="accessibilityPicker" pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
-                        <Button onClick={this.clearPrefs}>Clear preferences</Button>
+                        <Button onClick={this.clearPrefs} className="field">Clear preferences</Button>
                         <ProximitySearch ref="map" items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>
                         <input ref="search" type="text" placeholder="Search by name" onChange={this.onSearch} className="field"/>
                     </div>
