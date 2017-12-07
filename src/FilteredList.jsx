@@ -11,14 +11,14 @@ const sortOptions = [
     {name: "built", value: "Age"},
 ];
 
-const roomTypeOptions = [
-    {name: "all", value: "All", active: true},
-    {name: 1, value: "Singles"},
-    {name: 2, value: "Doubles"},
-    {name: 3, value: "Triples"},
-    {name: 4, value: "Quads"},
-    {name: 5, value: "Suites"}
-];
+// const roomTypeOptions = [
+//     {name: "all", value: "All", active: true},
+//     {name: 1, value: "Singles"},
+//     {name: 2, value: "Doubles"},
+//     {name: 3, value: "Triples"},
+//     {name: 4, value: "Quads"},
+//     {name: 5, value: "Suites"}
+// ];
 
 const accessibilityOptions = [
     {name: "all", value: "All", active: true},
@@ -47,7 +47,7 @@ class FilteredList extends Component {
     filterItem = (item) => {
         var roomAppropriate = true;
         this.state.roomType.forEach(function(val) {
-            if(item.roomType.indexOf(val) == -1) {
+            if(item.roomType.indexOf(val) === -1) {
                 roomAppropriate = false;
             }
         });
@@ -99,7 +99,7 @@ class FilteredList extends Component {
     clearPrefs = () => {
         this.setState({
             search: "",
-            roomType: "all",
+            roomType: [],
             sorting: "name",
             accessible: "all",
             distance: 0
@@ -114,9 +114,8 @@ class FilteredList extends Component {
         // I hate this
         var val = {currentTarget: {textContent: "All"}};
         this.refs.sortPicker.changeTitle(null,val);
-        // console.log(this.refs.roomTypeButtons.props.children);
-        this.refs.roomTypeButtons.props.children.forEach(function(button) {
-            console.log(button);
+        this.setState({
+            roomType: []
         });
         this.refs.accessibilityPicker.changeTitle(null,val);
     }   
@@ -136,8 +135,8 @@ class FilteredList extends Component {
                     <h1>Sophomore Dorm Guide</h1>
                     <div id="navbar">
                         <Picker ref="sortPicker" pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
-                        <ToggleButtonGroup ref="roomTypeButtons" type="checkbox" onChange={this.addRoomSize}>
-                            <ToggleButton value={1} className="edge">Single</ToggleButton>
+                        <ToggleButtonGroup type="checkbox" onChange={this.addRoomSize} value={this.state.roomType}>
+                            <ToggleButton value={1} className="edge" checked={true}>Single</ToggleButton>
                             <ToggleButton value={2}>Double</ToggleButton>
                             <ToggleButton value={3}>Triple</ToggleButton>
                             <ToggleButton value={4}>Quad</ToggleButton>
