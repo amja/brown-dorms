@@ -19,7 +19,7 @@ class ProximitySearch extends Component {
 		var service = new google.maps.DistanceMatrixService();
 		var origins = [];
 		this.props.items.forEach(function(element, i) {
-			origins[i] = element.latLong;
+			origins[i] = element.location;
 			names[i] = element.name;
 		});
 		service.getDistanceMatrix({
