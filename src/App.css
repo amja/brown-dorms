@@ -69,7 +69,7 @@ Picker, .btn, .btn-sm, .btn-default, .dropdown-toggle {
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover {
   background-color: #bc1414!important;
-  background-image: linear-gradient(to bottom, #EE0000 0, #DD0000 100%);
+  background-image: linear-gradient(to bottom, #bc1414 0, #8c1212 100%);
 }
 
 .dropdown-menu li {
