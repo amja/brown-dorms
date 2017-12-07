@@ -11,15 +11,6 @@ const sortOptions = [
     {name: "built", value: "Age"},
 ];
 
-// const roomTypeOptions = [
-//     {name: "all", value: "All", active: true},
-//     {name: 1, value: "Singles"},
-//     {name: 2, value: "Doubles"},
-//     {name: 3, value: "Triples"},
-//     {name: 4, value: "Quads"},
-//     {name: 5, value: "Suites"}
-// ];
-
 const accessibilityOptions = [
     {name: "all", value: "All", active: true},
     {name: true, value: "Accessible"},
@@ -126,7 +117,6 @@ class FilteredList extends Component {
         });
     }
 
-    // <Picker ref="roomTypePicker" pickFunction={this.setSetting} selection="roomType" items={roomTypeOptions} title="Room Type"  id="roomTypePicker"/>
     render() {
         return (
             <div className="filter-list">
