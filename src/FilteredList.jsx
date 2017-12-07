@@ -46,7 +46,7 @@ class FilteredList extends Component {
     // Returns the item if it is included in the selected filters.
     filterItem = (item) => {
         return item.name.toLowerCase().search(this.state.search) !== -1 
-            && (item.roomType.indexOf(this.state.roomType) != -1  || this.state.roomType === "all")
+            && (item.roomType.indexOf(this.state.roomType) !== -1  || this.state.roomType === "all")
             && (item.accessible === this.state.accessible || this.state.accessible === "all");
     }
 
