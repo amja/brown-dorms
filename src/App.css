@@ -1,7 +1,7 @@
 #header {
   text-align: center;
   margin-bottom: 50px;
-  border-bottom: 1.2px dashed red;
+  border-bottom: 1.2px dashed ##bc1414;
   padding: 15px;
 }
 
@@ -11,17 +11,19 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
+  font-family: Raleway;
 }
 
 h1 {
   display: inline;
-  color: red;
+  color: #bc1414;
   font-weight: bold;
   font-style: italic;
+  font-family: Raleway;
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover {
-  background-color: red!important;
+  background-color: #bc1414!important;
   background-image: linear-gradient(to bottom, #EE0000 0, #DD0000 100%);
 }
 
@@ -47,15 +49,23 @@ li {
 }
 
 li img {
-  border: 2px solid red;
-  box-shadow: 9px 9px 0 red;
+  border: 2px solid #bc1414;
+  box-shadow: 9px 9px 0px #bc1414;
   width: 350px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 li img:hover {
-  margin-left: 9px;
-  margin-top: 9px;
-  box-shadow: none;
+  
+  box-shadow: 14px 14px 0px #bc1414;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 li img:hover + h3 {
@@ -66,6 +76,7 @@ h3 {
   font-weight: bold;
   font-size: 20pt;
   margin: 20px 0 20px 0;
+  font-family: Raleway;
 }
 
 .field {
