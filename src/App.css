@@ -1,7 +1,7 @@
 #header {
   text-align: center;
   margin-bottom: 50px;
-  border-bottom: 1.2px dashed ##bc1414;
+  border-bottom: 1.2px dashed #bc1414;
   padding: 15px;
 }
 
@@ -70,6 +70,10 @@ li img:hover {
 
 li img:hover + h3 {
   margin-top: 20px;
+}
+
+li span {
+  font-weight:bold;
 }
 
 h3 {

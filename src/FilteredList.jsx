@@ -7,8 +7,8 @@ import ProximitySearch from './ProximitySearch';
 // These three arrays are to define the DropdownMenus used for sorting/filtering.
 const sortOptions = [
     {name: "name", value: "Alphabetical", active: true},
+    {name: "numRooms", value: "Number of Rooms"},
     {name: "built", value: "Age"},
-    {name: "size", value: "Name Length"}
 ];
 
 const roomTypeOptions = [
@@ -65,9 +65,6 @@ class FilteredList extends Component {
 
     // One method for sorting name length, date built or alphabetical.
     sortItems = (a,b) => {
-        if(this.state.sorting === "size") {
-            return a.name.length - b.name.length;
-        }
 
         // This line returns correct sorting values for an integer or string, depending on which is desired.
         return a[this.state.sorting] > b[this.state.sorting];
