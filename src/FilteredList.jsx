@@ -11,14 +11,13 @@ const sortOptions = [
     {name: "size", value: "Name Length"}
 ];
 
-const locationOptions = [
+const roomTypeOptions = [
     {name: "all", value: "All", active: true},
-    {name: "Main Green", value: "Main Green"},
-    {name: "Sciences Park", value: "Sciences Park"},
-    {name: "West", value: "West"},
-    {name: "Simmons Quadrangle", value: "Simmons Quadrangle"},
-    {name: "Pembroke Campus", value: "Pembroke Campus"},
-    {name: "Wriston Quadrangle", value: "Wriston Quadrangle"}
+    {name: 1, value: "Singles"},
+    {name: 2, value: "Doubles"},
+    {name: 3, value: "Triples"},
+    {name: 4, value: "Quads"},
+    {name: 5, value: "Suites"}
 ];
 
 const accessibilityOptions = [
@@ -32,7 +31,7 @@ class FilteredList extends Component {
         super(props);
         this.state = {
             search: "",
-            location: "all",
+            roomType: "all",
             sorting: "name",
             accessible: "all",
             distance: 0
@@ -47,7 +46,7 @@ class FilteredList extends Component {
     // Returns the item if it is included in the selected filters.
     filterItem = (item) => {
         return item.name.toLowerCase().search(this.state.search) !== -1 
-            && (item.location === this.state.location || this.state.location === "all")
+            && (item.roomType.indexOf(this.state.roomType) != -1  || this.state.roomType === "all")
             && (item.accessible === this.state.accessible || this.state.accessible === "all");
     }
 
@@ -97,17 +96,22 @@ class FilteredList extends Component {
     clearPrefs = () => {
         this.setState({
             search: "",
-            location: "all",
+            roomType: "all",
             sorting: "name",
             accessible: "all",
             distance: 0
         });
         this.refs.search.value = "";
         this.refs.map.refs.mapSearch.value = "";
+        this.props.items.forEach(function(element) {
+            element.distance = null;
+            element.time_text = null;
+        });
+
         // I hate this
         var val = {currentTarget: {textContent: "All"}};
         this.refs.sortPicker.changeTitle(null,val);
-        this.refs.locationPicker.changeTitle(null,val);
+        this.refs.roomTypePicker.changeTitle(null,val);
         this.refs.accessibilityPicker.changeTitle(null,val);
     }   
 
@@ -115,9 +119,9 @@ class FilteredList extends Component {
         return (
             <div className="filter-list">
                 <div id="header">
-                    <div id="title"><img alt="Brown University Seal" src="brown-logo.png" id="logo" /><h1>Dorm Directory</h1></div>
+                    <div id="title"><img alt="Brown University Seal" src="brown-logo.png" id="logo" /><h1>Sophomore Dorm Guide</h1></div>
                     <Picker ref="sortPicker" pickFunction={this.setSetting} selection="sorting" items={sortOptions} title="Sort by" id="sortPicker" />
-                    <Picker ref="locationPicker" pickFunction={this.setSetting} selection="location" items={locationOptions} title="Location"  id="locationPicker"/>
+                    <Picker ref="roomTypePicker" pickFunction={this.setSetting} selection="roomType" items={roomTypeOptions} title="Room Type"  id="roomTypePicker"/>
                     <Picker ref="accessibilityPicker" pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
                     <Button onClick={this.clearPrefs}>Clear preferences</Button>
                     <ProximitySearch ref="map" items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>

@@ -2,7 +2,7 @@ const buildings = [
 	{
 		"name":"Caswell Hall",
 		"built":1903,
-		"location":"Simmons Quadrangle",
+		"roomType":[2],
 		"accessible":"Non-accessible",
 		"img":"BrownUniversity-CaswellHall.jpg",
 		"description":"The wooden floors and fireplaces help you to forget that your roommate uses your toothbrush to clean his white sneakers.",
@@ -12,7 +12,7 @@ const buildings = [
 	{
 		"name":"Andrews Hall",
 		"built":1927,
-		"location":"Pembroke Campus",
+		"roomType":[2,3],
 		"accessible":"Accessible",
 		"img":"BrownUniversity-AndrewsHall.jpg",
 		"description":"Residents feel on top of the world (if the world were a dining hall). This year, the Harvest Fest in the basement didn't have chicken pot pie.",
@@ -22,7 +22,7 @@ const buildings = [
 	{
 		"name":"Marcy House",
 		"built":1952,
-		"location":"Wriston Quadrangle",
+		"roomType":[1,2],
 		"accessible":"Accessible",
 		"img":"BrownUniversity-MarcyHouse.jpg",
 		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
