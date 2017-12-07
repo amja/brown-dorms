@@ -124,7 +124,7 @@ class FilteredList extends Component {
                         <Picker ref="accessibilityPicker" pickFunction={this.setSetting} selection="accessible" items={accessibilityOptions} title="Accessibility"  id="accessibilityPicker"/>
                         <Button onClick={this.clearPrefs}>Clear preferences</Button>
                         <ProximitySearch ref="map" items={this.props.items.filter(this.filterItem)} updateFunction={this.updateDistances}/>
-                        <input ref="search" type="text" placeholder="Search" onChange={this.onSearch} className="field"/>
+                        <input ref="search" type="text" placeholder="Search by name" onChange={this.onSearch} className="field"/>
                     </div>
                 </div>
                 <List items={this.props.items.filter(this.filterItem).sort(this.sortItems)}/>
