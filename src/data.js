@@ -85,7 +85,7 @@ const buildings = [
 	"img":"diman.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/DIMAN/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"Diman House, Providence, RI 02906"
 },
 
 {
@@ -100,7 +100,7 @@ const buildings = [
 	"img":"goddard.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/GODDARD/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"41.824121, -71.401326"
 },
 
 {
@@ -115,7 +115,7 @@ const buildings = [
 	"img":"gradcenter.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/GRADCTRD/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"Graduate Center D, Providence, RI"
 
 },
 
@@ -147,7 +147,7 @@ const buildings = [
 	"img":"harkness.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/HARKNESS/PICTURES",
-	"location":"41.824030, -71.400759"
+	"location":"Harkness House, Providence, RI"
 
 },
 
@@ -223,7 +223,7 @@ const buildings = [
 	"img": "marcy.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/MARCYHSE/PICTURES",
-	"location": "41.824759, -71.401310"
+	"location": "Marcy House, Providence, RI"
 },
 
 {
@@ -267,7 +267,7 @@ const buildings = [
 	"img": "olney.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/OLNEY/PICTURES",
-	"location": "41.824702, -71.401993"
+	"location": "Olney House, Providence, RI"
 },
 
 
@@ -310,7 +310,7 @@ const buildings = [
 	"img": "sears.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/SEARS/PICTURES",
-	"location": "41.825242, -71.401840"
+	"location": "Sears House, Providence, RI"
 },
 
 
