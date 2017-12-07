@@ -62,7 +62,6 @@ class FilteredList extends Component {
 
     // One method for sorting name length, date built or alphabetical.
     sortItems = (a,b) => {
-
         // This line returns correct sorting values for an integer or string, depending on which is desired.
         return a[this.state.sorting] > b[this.state.sorting];
     }
