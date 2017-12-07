@@ -202,7 +202,8 @@ littlebox {
 }
 
 littlebox:hover {
-  color: white;
+  color: white !important;
+  box-shadow: 4px 4px #8c1212;
   background-color: #bc1414;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -211,6 +212,10 @@ littlebox:hover {
   /*border-color: #bc1414;
   border-width: 4px;
   border-style: outset;*/
+}
+
+littlebox:hover a {
+  color: white;
 }
 
 
