@@ -112,22 +112,6 @@ const buildings = [
 		"kitchens": "General (2)",
 		"bathrooms": "1 per 5 singles",
 		"program": "No",
-		"img":"gradcenterd.jpg",
-		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
-		"navLink":"https://goo.gl/maps/CKczionqspj",
-		"location":"41.824878, -71.401378"
-
-	},
-
-	{
-		"name":"Graduate Center D",
-		"built":1968,
-		"roomType":[1],
-		"accessible":false,
-		"numRooms": 102,
-		"kitchens": "General (2)",
-		"bathrooms": "1 per 5 singles",
-		"program": "No",
 		"img":"gradcenter.jpg",
 		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 		"navLink":"https://goo.gl/maps/CKczionqspj",
@@ -149,20 +133,66 @@ const buildings = [
 		"navLink":"https://goo.gl/maps/CKczionqspj",
 		"location":"41.824878, -71.401378"
 
-	}
-
-	,
+	},
 
 	{
 		"name":"Harkness House",
 		"built":1951,
 		"roomType":[1,2],
 		"accessible":true,
-		"numRooms": 44,
+		"numRooms": 32,
 		"kitchens": "General (3)",
-		"bathrooms": "1 per double",
+		"bathrooms": "Two per floor",
+		"program": "Kappa Delta Sorority & Technology House",
+		"img":"harkness.jpg",
+		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
+		"navLink":"https://goo.gl/maps/CKczionqspj",
+		"location":"41.824878, -71.401378"
+
+	},
+
+	{
+		"name":"Hope College",
+		"built":1822,
+		"roomType":[1,2],
+		"accessible":false,
+		"numRooms": 46,
+		"kitchens": "General (1)",
+		"bathrooms": "Two per floor",
 		"program": "No",
-		"img":"newdorm.jpg",
+		"img":"hopecollege.jpg",
+		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
+		"navLink":"https://goo.gl/maps/CKczionqspj",
+		"location":"41.824878, -71.401378"
+
+	},
+
+	{
+		"name":"King House",
+		"built":1895,
+		"roomType":[1,2],
+		"accessible":false,
+		"numRooms": "Rooms not granted through Housing Lottery",
+		"kitchens": "General (1)",
+		"bathrooms": "Two per floor",
+		"program": "St. Anthony Hall",
+		"img":"kings.jpg",
+		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
+		"navLink":"https://goo.gl/maps/CKczionqspj",
+		"location":"41.824878, -71.401378"
+
+	},
+
+	{
+		"name":"Littlefield Hall",
+		"built":1926,
+		"roomType":[2],
+		"accessible":false,
+		"numRooms": 34,
+		"kitchens": "General (1)",
+		"bathrooms": "Two per floor",
+		"program": "No",
+		"img":"littlefield.jpg",
 		"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 		"navLink":"https://goo.gl/maps/CKczionqspj",
 		"location":"41.824878, -71.401378"
