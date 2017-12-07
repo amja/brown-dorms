@@ -201,20 +201,21 @@ const buildings = [
 
 {
 	"name": "Machado House",
-	"Built": 1912,
+	"built": 1912,
 	"roomType": [1,2,3],
 	"accessible": true,
 	"numRooms": 18,
 	"kitchens": "General (3)",
 	"program": "Spanish/French House & Latinx House",
 	"img": "machado.jpg",
+	"description": "TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/MACHADO/PICTURES",
 	"location": "87 Prospect St, Providence, RI 02912"
 },
 
 {
 	"name": "Marcy House",
-	"Built": 1951,
+	"built": 1951,
 	"roomType": [1,2,3],
 	"accessible": true,
 	"numRooms": 80,
@@ -228,7 +229,7 @@ const buildings = [
 
 {
 	"name": "Minden Hall",
-	"Built": 1912,
+	"built": 1912,
 	"roomType": [1,2,3,4],
 	"accessible": false,
 	"numRooms": 112,
@@ -244,7 +245,7 @@ const buildings = [
 
 {
 	"name": "New Pembroke 4",
-	"Built": 1974,
+	"built": 1974,
 	"roomType": [1,2],
 	"accessible":false,
 	"numRooms": 81,
@@ -258,7 +259,7 @@ const buildings = [
 
 {
 	"name": "Olney House",
-	"Built": 1951,
+	"built": 1951,
 	"roomType": [1,2],
 	"accessible":true,
 	"numRooms": 99,
@@ -273,7 +274,7 @@ const buildings = [
 
 {
 	"name": "Perkins Hall",
-	"Built": 1960,
+	"built": 1960,
 	"roomType": [2],
 	"accessible":true,
 	"numRooms": 189,
@@ -287,7 +288,7 @@ const buildings = [
 
 {
 	"name": "Plantation House",
-	"Built": 1896,
+	"built": 1896,
 	"roomType": [1,2,3],
 	"accessible":"Inaccesible",
 	"numRooms": 10,
@@ -301,7 +302,7 @@ const buildings = [
 
 {
 	"name": "Sears House",
-	"Built": 1951,
+	"built": 1951,
 	"roomType": [1,2],
 	"accessible":"Accessible",
 	"numRooms": 79,
@@ -316,7 +317,7 @@ const buildings = [
 
 {
 	"name": "West House",
-	"Built": 1885,
+	"built": 1885,
 	"roomType": [1,2],
 	"accessible":"Inaccessible",
 	"numRooms": -1,
