@@ -27,7 +27,7 @@ const buildings = [
 	"img":"barbour.jpg",
 	"description":"The wooden floors and fireplaces help you to forget that your roommate uses your toothbrush to clean his white sneakers.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/BARBOUR/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "Barbour Hall, Providence, RI 02912"
 },
 {
 	"name":"Buxton House",
@@ -41,7 +41,7 @@ const buildings = [
 	"img":"buxton.jpg",
 	"description":"Residents feel on top of the world (if the world were a dining hall). This year, the Harvest Fest in the basement didn't have chicken pot pie.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/BUXTON/PICTURES",
-	"location": "41.830443, -71.402504"
+	"location": "Buxton House, Providence, RI"
 },
 {
 	"name":"Caswell Hall",
@@ -55,7 +55,7 @@ const buildings = [
 	"img":"caswell.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/CASWELL/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"Caswell Hall, Providence, RI 02912"
 },
 
 {
@@ -70,7 +70,7 @@ const buildings = [
 	"img":"chapin.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/CHAPIN/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"Chapin House, Providence, RI 02906"
 },
 
 {
@@ -120,7 +120,7 @@ const buildings = [
 },
 
 {
-	"name":"Gregorian Quad A",
+	"name":"V. Gregorian Quad A",
 	"built":1991,
 	"roomType":[1,2],
 	"accessible":true,
@@ -131,7 +131,7 @@ const buildings = [
 	"img":"newdorm.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/VGQUADA/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"103 Thayer St, Providence, RI 02906"
 
 },
 
@@ -147,7 +147,7 @@ const buildings = [
 	"img":"harkness.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/HARKNESS/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"41.824030, -71.400759"
 
 },
 
@@ -163,7 +163,7 @@ const buildings = [
 	"img":"hopecollege.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/HOPECOLL/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"71 Waterman St, Providence, RI 02912"
 
 },
 
@@ -179,7 +179,7 @@ const buildings = [
 	"img":"kings.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/KINGHSE/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"154 Hope St, Providence, RI 02912"
 
 },
 
@@ -195,7 +195,7 @@ const buildings = [
 	"img":"littlefield.jpg",
 	"description":"Named for William Marcy, class of 1808, who became the Comptroller of the State of New York. I didn't think they had computers back in 1808 but my history knowledge is fuzzy. Houses the Jewish fraternity but not many Jews.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/LITTLEFLD/PICTURES",
-	"location":"41.824878, -71.401378"
+	"location":"41.825605, -71.402030"
 
 },
 
@@ -209,7 +209,7 @@ const buildings = [
 	"program": "Spanish/French House & Latinx House",
 	"img": "machado.jpg",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/MACHADO/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "87 Prospect St, Providence, RI 02912"
 },
 
 {
@@ -223,7 +223,7 @@ const buildings = [
 	"img": "marcy.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/MARCYHSE/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "41.824759, -71.401310"
 },
 
 {
@@ -237,7 +237,7 @@ const buildings = [
 	"img": "minden.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/MINDEN/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "123 Waterman St, Providence, RI 02906"
 },
 
 
@@ -253,7 +253,7 @@ const buildings = [
 	"img": "newpembroke3.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/NEWPEM4/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "300 Thayer St, Providence, RI 02906"
 },
 
 {
@@ -267,7 +267,7 @@ const buildings = [
 	"img": "olney.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/OLNEY/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "41.824702, -71.401993"
 },
 
 
@@ -282,7 +282,7 @@ const buildings = [
 	"img": "perkins.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/PERKINS/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "Perkins Hall, Providence, RI 02912"
 },
 
 {
@@ -296,7 +296,7 @@ const buildings = [
 	"img": "plantation.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/WESTHSE/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "Plantations House, 219 Bowen St, Providence, RI 02912"
 },
 
 {
@@ -310,7 +310,7 @@ const buildings = [
 	"img": "sears.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/SEARS/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "41.825242, -71.401840"
 },
 
 
@@ -325,7 +325,7 @@ const buildings = [
 	"img": "west.jpg",
 	"description":"TODO",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/WESTHSE/PICTURES",
-	"location": "41.826134, -71.400644"
+	"location": "91 Brown St, Providence, RI 02906"
 }
 
 ]
