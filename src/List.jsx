@@ -10,8 +10,9 @@ class List extends Component {
                 <li key={item.name}>
                     <img alt={"photo of " + item.name} src={item.img}/>
                     <h3><i className="fa fa-home"></i> {item.name}</h3>
-                    <h4>Built: {item.built}</h4>{distance}
-                    <p>{item.description} (map: <a href={item.brownMap} target="_blank">Brown</a>)</p>
+                    <h4><i className="fa fa-map-marker"></i> <a href={item.brownMap} target="_blank"> Map of building</a></h4>{distance}
+                    <p>{item.description} </p>
+                    <p><span><i className="fa fa-building-o"></i>  Built:</span> {item.built}</p>
                     <p><span><i className="fa fa-users"></i>    Number of Rooms:</span> {item.numRooms === -1 ? "Rooms not granted through Housing Lottery" : item.numRooms}</p>
                     <p><span><i className="fa fa-wheelchair"></i>    Accessibility:</span> {item.accessible ? "Accessible" : "Non-Accessible"}</p>
                     <p><span><i className="fa fa-cutlery"></i> Kitchens:</span> {item.kitchens}</p>
