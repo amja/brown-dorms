@@ -12,6 +12,11 @@ class List extends Component {
                     <h3>{item.name}</h3>
                     <h4>Built: {item.built}</h4>{distance}
                     <p>{item.description} (map: <a href={item.googleMap} target="_blank">Google</a> / <a href={item.brownMap} target="_blank">Brown</a>)</p>
+                    <p>Number of Rooms: {item.numRooms}</p>
+                    <p>Accessibility: {item.accessible}</p>
+                    <p>Kitchens: {item.kitchens}</p>
+                    <p>Bathroom Type: {item.bathrooms}</p>
+                    <p>Program Housing?: {item.program}</p>
                 </li>)
         });
 
