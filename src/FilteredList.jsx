@@ -82,6 +82,9 @@ class FilteredList extends Component {
 
     // This method populates the distance field of the locations and then sorts them by that.
     updateDistances = (elements, names) =>{
+        this.setState({sorting: "name"});
+        var val = {currentTarget: {textContent: "All"}};
+        this.refs.sortPicker.changeTitle(null,val);
         for(var i = 0; i < elements.length; i++) {
             this.props.items[i].distance = elements[i].elements[0].duration.value;
             this.props.items[i].time_text = elements[i].elements[0].duration.text;
