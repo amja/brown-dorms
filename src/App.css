@@ -195,7 +195,7 @@ icon {
 }
 
 
-littlebox {
+#map-box {
   width: 80px;
   height: 40px;
   border: 2px solid #bc1414;
@@ -211,7 +211,7 @@ littlebox {
  
 }
 
-littlebox:hover {
+#map-box:hover {
   color: white !important;
   box-shadow: 4px 4px #8c1212;
   background-color: #bc1414;
@@ -224,12 +224,12 @@ littlebox:hover {
   border-style: outset;*/
 }
 
-littlebox:hover a {
+#map-box:hover a {
   color: white;
 }
 
 
-littlebox2 {
+#walking {
   width:360px;
   height: 40px;
   padding-bottom: 10px;
