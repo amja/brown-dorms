@@ -271,7 +271,7 @@ const buildings = [
 	"bathrooms": "Two per floor",
 	"program": "Sigma Chi Fraternity & Beta Omega Chi Fraternity",
 	"img": "olney.jpg",
-	"description":"TODO",
+	"description":"Olney was named in honor of Richard Olney, class of 1856, Attorney General to President Cleveland, and U.S. Secretary of State.",
 	"brownMap":"https://www.brown.edu/Facilities/Facilities_Management/maps/#building/OLNEY/PICTURES",
 	"location": "Olney House, Providence, RI"
 },
