@@ -1,4 +1,5 @@
 # Brown Dorms Guide
+## About
 This React.js project was created for a final presentation in CSCI1300: User Interface and User 
 Experience.
 
